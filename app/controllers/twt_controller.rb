@@ -1,0 +1,2 @@
+class TwtController < ApplicationController
+end
