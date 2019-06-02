@@ -1,0 +1,13 @@
+<h3>以下の内容で、送信する。</h3>
+
+<%= form_with(model: @twt, url: twts_path, local: true) do |form| %>
+  <%= form.hidden_field :content %>
+
+  <p>Tweet:<%= @twt.content %></p>
+  <%= form.submit  "Tweet" %>
+<% end %>
+
+<%= form_with(model: @twt , url: new_twt_path,local: true,method: 'get') do |form| %>
+<%= form.hidden_field :content %>
+<%= form.submit '戻る',name: 'back' %>
+<% end %>
