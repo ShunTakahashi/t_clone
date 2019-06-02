@@ -1,1 +1,9 @@
 <h1>投稿ページ</h1>
+
+<%= form_with(model: @twt, local: true) do |form| %>
+  <div class="twi">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+  <%= form.submit %>
+<% end %>
