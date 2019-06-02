@@ -13,12 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-html{
-    height:100%;
-}
-
-.test{
-    font-size:40px;
-    background-color: black;
-}

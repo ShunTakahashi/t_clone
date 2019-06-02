@@ -6,13 +6,23 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-
-    <header>
-      <h1 class=test >aaa</h1>
+　</head>
+ <body>
+   <div class="container">
+    <header class="header crearfix">
+      <nav>
+        <ul class="top_menu clearfix">
+          <li><a href="application.html.erb">TOP</a></li>
+          <li><a href="index.html">投稿</a></li>
+          <li><a href="index.html">編集</a></li>
+          <li><a href="index.html">一覧</a></li>
+          <li><a href="index.html">削除</a></li>
+        </ul>
+      </nav>
     </header>
-  </body>
-
+    <%= yield %>
+    <footer class="footer">
+      <p>Copyright © 2019 Twitter_Clone</p>
+    </footer>
+ </body>
 </html>
