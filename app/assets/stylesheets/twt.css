@@ -89,3 +89,7 @@ footer {
   opacity: 0.5;
   text-decoration: underline;
 }
+
+.new_h1{
+  font-size: 3rem;
+}
