@@ -1,7 +1,3 @@
-config.time_zone = 'Tokyo'
-config.active_record.default_timezone = :loca
-config.log_level = :info
-
 require_relative 'boot'
 
 require 'rails/all'
